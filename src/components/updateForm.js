@@ -52,7 +52,7 @@ const UpdateForm = ({ imageData }) => {
         event.preventDefault();
         try {
             const response = await fetch(
-                `https://wear-it-again-api.onrender.com/items/${imageData.item_id}`,
+                `http://localhost:3127/items/${imageData.item_id}`,
                 {
                     method: "PUT",
                     headers: {
